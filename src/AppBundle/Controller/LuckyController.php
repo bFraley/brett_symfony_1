@@ -9,14 +9,14 @@ use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 class LuckyController extends Controller
 {
     /**
-    * @Route("/lucky/number")
+    * @Route("/apps/luckynumber")
     */
 
     public function numberAction()
     {
         $number = mt_rand(0, 100);
 
-        return $this -> render('apps/number.html.twig', array(
+        return $this -> render('apps/luckynumber.html.twig', array(
             'number' => $number,
         ));
     }
