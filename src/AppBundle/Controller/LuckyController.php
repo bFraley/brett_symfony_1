@@ -1,6 +1,5 @@
 <?php
 
-// src/AppBundle/Controller/LuckyController.php
 namespace AppBundle\Controller;
 
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
@@ -17,7 +16,7 @@ class LuckyController extends Controller
     {
         $number = mt_rand(0, 100);
 
-        return $this -> render('lucky/number.html.twig', array(
+        return $this -> render('apps/number.html.twig', array(
             'number' => $number,
         ));
     }
